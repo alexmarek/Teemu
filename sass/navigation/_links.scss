@@ -1,0 +1,23 @@
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+	border-bottom: 1px solid transparent;
+
+	&:visited {
+		color: var(--shadow-dark);
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		border-color: #000;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'Headings';
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap; /* Read next point */
+	unicode-range: U+000-5FF; /* Download only latin glyphs */
+	src: local('Headings'),
+		 url('../fonts/TenorSans-Regular.woff2') format('woff2'), 
+		 url('../fonts/TenorSans-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Copy';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; /* Read next point */
+	unicode-range: U+000-5FF; /* Download only latin glyphs */
+	src: local('Copy'),
+		 url('../fonts/WorkSans-Light.woff2') format('woff2'), 
+		 url('../fonts/WorkSans-Light.woff') format('woff');
+}
+
+body {
+	font-family: 'Copy';
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+ h1, h2, h3,h4, h5 {
+	font-family: 'Headings';
+ }
+h2 {
+	font-size: 5.4rem;
+	font-stretch: normal;
+  	line-height: 1.11;
+	letter-spacing: normal;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	@media only screen and (max-width: $bp-medium){
+		font-size: 3.2rem;
+	}
+}
+p {
+	font-size: 2.2rem;
+	@media only screen and (max-width: $bp-medium){
+		font-size: 1.6rem;
+	}
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5rem;
+}
+
+address {
+	margin: 0 0 1.5rem;
+}
+
+pre {
+	margin-bottom: 0;
+	max-width: 100%;
+	overflow: auto;
+	padding: 0;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+mark, ins {
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}

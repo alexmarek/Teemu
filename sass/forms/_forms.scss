@@ -1,0 +1,55 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: var(var(var(--shadow-dark)));
+	border-radius: 3px;
+	background: var(var(--shadow-dark));
+	color: rgba(0, 0, 0, .8);
+	line-height: 1;
+	padding: .6rem 1rem .4rem;
+
+	&:hover {
+		border-color: var(var(--shadow-dark));
+	}
+
+	&:active,
+	&:focus {
+		border-color: var(var(--shadow-dark));
+	}
+}
+
+input[type="text"],
+input[type="remail"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: var(--shadow-dark);
+	border: 1px solid var(--shadow-dark);
+	border-radius: 3px;
+	padding: 3px;
+
+	&:focus {
+		color: var(--shadow-dark);
+	}
+}
+
+select {
+	border: 1px solid var(--shadow-dark);
+}
+
+textarea {
+	width: 100%;
+}
