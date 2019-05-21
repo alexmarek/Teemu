@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seekerl
  */
 
 get_header();

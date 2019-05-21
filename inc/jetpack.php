@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seekerl
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function teemu_laurell_jetpack_setup() {
+function infinity_seekerl_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'teemu_laurell_infinite_scroll_render',
+		'render'    => 'infinity_seekerl_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -42,12 +42,12 @@ function teemu_laurell_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'teemu_laurell_jetpack_setup' );
+add_action( 'after_setup_theme', 'infinity_seekerl_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function teemu_laurell_infinite_scroll_render() {
+function infinity_seekerl_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

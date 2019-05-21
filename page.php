@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Teemu_Laurell
+ * @package Infinity Seeker
  */
 
 get_header();
@@ -26,15 +26,6 @@ get_header();
 				) );
 				?>
 			</nav><!-- #site-navigation -->
-
-			<?php
-				get_template_part( 'template-parts/home-section-1' );
-				get_template_part( 'template-parts/home-section-2' );
-				get_template_part( 'template-parts/home-section-3' );
-				get_template_part( 'template-parts/home-section-4' );
-				get_template_part( 'template-parts/home-section-5' );
-				get_template_part( 'template-parts/home-section-6' );
-			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

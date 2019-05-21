@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seekerl
  */
 
 ?>
@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				teemu_laurell_posted_on();
-				teemu_laurell_posted_by();
+				infinity_seekerl_posted_on();
+				infinity_seekerl_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php teemu_laurell_post_thumbnail(); ?>
+	<?php infinity_seekerl_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -54,6 +54,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php teemu_laurell_entry_footer(); ?>
+		<?php infinity_seekerl_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

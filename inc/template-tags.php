@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seekerl
  */
 
-if ( ! function_exists( 'teemu_laurell_posted_on' ) ) :
+if ( ! function_exists( 'infinity_seekerl_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
-	function teemu_laurell_posted_on() {
+	function infinity_seekerl_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -35,11 +35,11 @@ if ( ! function_exists( 'teemu_laurell_posted_on' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'teemu_laurell_posted_by' ) ) :
+if ( ! function_exists( 'infinity_seekerl_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
-	function teemu_laurell_posted_by() {
+	function infinity_seekerl_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'teemu-laurell' ),
@@ -51,11 +51,11 @@ if ( ! function_exists( 'teemu_laurell_posted_by' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'teemu_laurell_entry_footer' ) ) :
+if ( ! function_exists( 'infinity_seekerl_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function teemu_laurell_entry_footer() {
+	function infinity_seekerl_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
@@ -111,14 +111,14 @@ if ( ! function_exists( 'teemu_laurell_entry_footer' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'teemu_laurell_post_thumbnail' ) ) :
+if ( ! function_exists( 'infinity_seekerl_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
 	 *
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
-	function teemu_laurell_post_thumbnail() {
+	function infinity_seekerl_post_thumbnail() {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}

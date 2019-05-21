@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seekerl
  */
 
 /*
@@ -28,8 +28,8 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$teemu_laurell_comment_count = get_comments_number();
-			if ( '1' === $teemu_laurell_comment_count ) {
+			$infinity_seekerl_comment_count = get_comments_number();
+			if ( '1' === $infinity_seekerl_comment_count ) {
 				printf(
 					/* translators: 1: title. */
 					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'teemu-laurell' ),
@@ -38,8 +38,8 @@ if ( post_password_required() ) {
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $teemu_laurell_comment_count, 'comments title', 'teemu-laurell' ) ),
-					number_format_i18n( $teemu_laurell_comment_count ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $infinity_seekerl_comment_count, 'comments title', 'teemu-laurell' ) ),
+					number_format_i18n( $infinity_seekerl_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			}

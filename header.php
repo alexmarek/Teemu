@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seekerl
  */
 
 ?>

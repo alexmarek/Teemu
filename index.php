@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seeker
  */
 
 get_header();

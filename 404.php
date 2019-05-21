@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seekerl
  */
 
 get_header();
@@ -44,8 +44,8 @@ get_header();
 
 					<?php
 					/* translators: %1$s: smiley */
-					$teemu_laurell_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'teemu-laurell' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$teemu_laurell_archive_content" );
+					$infinity_seekerl_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'teemu-laurell' ), convert_smilies( ':)' ) ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$infinity_seekerl_archive_content" );
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
 					?>

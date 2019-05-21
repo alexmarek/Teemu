@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Teemu_Laurell
+ * @package Infinity_Seekerl
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses teemu_laurell_header_style()
+ * @uses infinity_seekerl_header_style()
  */
-function teemu_laurell_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'teemu_laurell_custom_header_args', array(
+function infinity_seekerl_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'infinity_seekerl_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'teemu_laurell_header_style',
+		'wp-head-callback'       => 'infinity_seekerl_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'teemu_laurell_custom_header_setup' );
+add_action( 'after_setup_theme', 'infinity_seekerl_custom_header_setup' );
 
-if ( ! function_exists( 'teemu_laurell_header_style' ) ) :
+if ( ! function_exists( 'infinity_seekerl_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see teemu_laurell_custom_header_setup().
+	 * @see infinity_seekerl_custom_header_setup().
 	 */
-	function teemu_laurell_header_style() {
+	function infinity_seekerl_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
