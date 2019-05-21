@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Infinity_Seekerl
+ * @package Infinity_Seeker
  */
 
 ?>
@@ -16,20 +16,20 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			infinity_seekerl_posted_on();
-			infinity_seekerl_posted_by();
+			infinity_seeker_posted_on();
+			infinity_seeker_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php infinity_seekerl_post_thumbnail(); ?>
+	<?php infinity_seeker_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php infinity_seekerl_entry_footer(); ?>
+		<?php infinity_seeker_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

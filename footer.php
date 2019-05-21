@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Infinity_Seekerl
+ * @package Infinity_Seeker
  */
 
 ?>

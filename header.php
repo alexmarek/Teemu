@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Infinity_Seekerl
+ * @package Infinity_Seeker
  */
 
 ?>
@@ -17,15 +17,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<link rel="preload" as="font" href="<?php echo get_template_directory_uri() ?>/fonts/TenorSans-Regular.woff2" type="font/woff2" crossorigin="anonymous">
-  	<link rel="preload" as="font" href="<?php echo get_template_directory_uri() ?>/fonts/WorkSans-Light.woff2" type="font/woff2" crossorigin="anonymous">
+	<!-- <link rel="preload" as="font" href="<?php // echo get_template_directory_uri() ?>/fonts/TenorSans-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  	<link rel="preload" as="font" href="<?php // echo get_template_directory_uri() ?>/fonts/WorkSans-Light.woff2" type="font/woff2" crossorigin="anonymous"> -->
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'teemu-laurell' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'infinity-seeker' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">

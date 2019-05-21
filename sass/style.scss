@@ -7,7 +7,7 @@ Description: Bespoke theme for Teemu Laurell, a Finnish top chef
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: teemu-laurell
+Text Domain: infinity-seeker
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -31,7 +31,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-@import "typography/all";
+@import "typography/typography";
 
 /*--------------------------------------------------------------
 # Forms
@@ -54,16 +54,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import "modules/clearings";
 
 /*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-@import "sections/sections";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
@@ -72,3 +62,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Navigation
 --------------------------------------------------------------*/
 @import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import "pages/home";

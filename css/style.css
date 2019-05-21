@@ -7,7 +7,7 @@ Description: Bespoke theme for Teemu Laurell, a Finnish top chef
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: teemu-laurell
+Text Domain: infinity-seeker
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -81,7 +81,7 @@ img {
   /* Read next point */
   unicode-range: U+000-5FF;
   /* Download only latin glyphs */
-  src: local("Headings"), url("../fonts/TenorSans-Regular.woff2") format("woff2"), url("../fonts/TenorSans-Regular.woff") format("woff"); }
+  src: local("Headings"); }
 
 @font-face {
   font-family: 'Copy';
@@ -91,16 +91,20 @@ img {
   /* Read next point */
   unicode-range: U+000-5FF;
   /* Download only latin glyphs */
-  src: local("Copy"), url("../fonts/WorkSans-Light.woff2") format("woff2"), url("../fonts/WorkSans-Light.woff") format("woff"); }
+  src: local("Copy"); }
 
 body {
-  font-family: 'Copy';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Headings'; }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 h2 {
   font-size: 5.4rem;
@@ -119,7 +123,10 @@ p {
     p {
       font-size: 1.6rem; } }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -134,11 +141,13 @@ pre {
   overflow: auto;
   padding: 0; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   text-decoration: none; }
 
 big {
@@ -304,199 +313,6 @@ textarea {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-.section {
-  padding: 6.5rem 2rem; }
-  @media only screen and (max-width: 56.25rem) {
-    .section {
-      padding: 5rem 0; } }
-  .section__content {
-    max-width: 120rem;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between; }
-    @media only screen and (max-width: 56.25rem) {
-      .section__content {
-        flex-direction: column;
-        margin: 0;
-        max-width: 100%;
-        width: 100%; } }
-  .section--1 {
-    background-color: var(--color-bg-1); }
-    @media only screen and (min-width: 56.25rem) {
-      .section--1 img {
-        max-width: 50%; } }
-    @media only screen and (max-width: 75rem) {
-      .section--1 .section__content {
-        height: auto;
-        align-items: flex-end; } }
-    .section--1__image {
-      margin: 1.5rem 0; }
-      @media only screen and (max-width: 56.25rem) {
-        .section--1__image {
-          max-width: 90%; } }
-    .section--1__logo {
-      margin: -20rem 0 1.5rem; }
-      @media only screen and (max-width: 56.25rem) {
-        .section--1__logo {
-          max-width: 80%;
-          margin: 1.5rem auto; } }
-  .section--2 {
-    background-color: var(--color-bg-2); }
-    .section--2 img, .section--2 h2 {
-      max-width: 50%; }
-      @media only screen and (max-width: 56.25rem) {
-        .section--2 img, .section--2 h2 {
-          max-width: 100%; } }
-    .section--2 h2 {
-      padding-left: 12rem; }
-    @media only screen and (max-width: 56.25rem) {
-      .section--2 img {
-        order: 2;
-        max-width: 90%; }
-      .section--2 h2 {
-        order: 1;
-        padding-left: 3rem;
-        max-width: 100%; }
-      .section--2 .section__content {
-        align-items: flex-start; } }
-  .section--3 {
-    background-color: var(--color-bg-3); }
-    .section--3 img, .section--3__text {
-      max-width: 50%; }
-      @media only screen and (max-width: 56.25rem) {
-        .section--3 img, .section--3__text {
-          max-width: 100%; } }
-    @media only screen and (max-width: 56.25rem) {
-      .section--3 img {
-        max-width: 90%; } }
-    .section--3__text {
-      padding-right: 22rem; }
-      @media only screen and (max-width: 56.25rem) {
-        .section--3__text {
-          padding: 3rem; } }
-    @media only screen and (max-width: 56.25rem) {
-      .section--3 .section__content {
-        align-items: flex-end; } }
-  .section--4 {
-    background-color: var(--color-bg-4); }
-    .section--4 .section__content {
-      flex-direction: column;
-      text-align: center;
-      max-width: 60rem; }
-      @media only screen and (max-width: 56.25rem) {
-        .section--4 .section__content {
-          padding: 0 2rem; } }
-    .section--4__links {
-      margin-top: 2rem; }
-      .section--4__links p {
-        font-family: 'Headings';
-        font-size: 3.2rem;
-        line-height: 1.69; }
-        @media only screen and (max-width: 56.25rem) {
-          .section--4__links p {
-            font-size: 2.2rem; } }
-  .section--5 {
-    background-color: var(--color-bg-5); }
-    .section--5 .section__content {
-      flex-direction: column;
-      text-align: center; }
-    .section--5 h2 {
-      max-width: 60rem; }
-    @media only screen and (max-width: 56.25rem) {
-      .section--5 p {
-        padding: 0 2rem; } }
-    .section--5__form {
-      max-width: 90%;
-      width: 48rem;
-      margin-bottom: 9rem;
-      margin-top: 4rem;
-      position: relative; }
-      @media only screen and (max-width: 56.25rem) {
-        .section--5__form {
-          margin-bottom: 4rem; } }
-      .section--5__form input, .section--5__form textarea, .section--5__form button {
-        width: 100%;
-        margin-bottom: 1.1rem;
-        border-radius: 0;
-        border: 0;
-        padding: 1.4rem;
-        font-size: 1.6rem;
-        color: var(--color-grey-dark-2);
-        background-color: #fff;
-        font-family: 'Headings'; }
-        .section--5__form input:focus, .section--5__form textarea:focus, .section--5__form button:focus {
-          outline: 0;
-          color: #000; }
-          .section--5__form input:focus::placeholder, .section--5__form textarea:focus::placeholder, .section--5__form button:focus::placeholder {
-            color: #000; }
-        .section--5__form input:valid, .section--5__form textarea:valid, .section--5__form button:valid {
-          color: #000; }
-      .section--5__form input {
-        height: 5rem; }
-      .section--5__form textarea {
-        height: 20rem;
-        margin-bottom: 3rem; }
-      .section--5__form button {
-        border: 1px solid #000;
-        background: 0;
-        transition: all 0.15s ease-in-out;
-        box-sizing: border-box;
-        cursor: pointer; }
-        .section--5__form button:hover {
-          background: #000;
-          border-color: #000;
-          color: #fff; }
-      .section--5__form .wpforms-field-hp {
-        visibility: hidden;
-        height: 0; }
-      .section--5__form label.wpforms-error {
-        font-size: 10px;
-        color: red;
-        position: absolute;
-        right: 5px; }
-      .section--5__form .wpforms-confirmation-scroll {
-        background: #fff;
-        padding: 30px;
-        margin: 30px;
-        color: #000; }
-    .section--5__cta {
-      display: flex;
-      justify-content: space-between; }
-      @media only screen and (max-width: 56.25rem) {
-        .section--5__cta {
-          flex-direction: column; } }
-      .section--5__cta > * {
-        width: 282px;
-        height: 282px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        font-size: 2.2rem; }
-        @media only screen and (max-width: 56.25rem) {
-          .section--5__cta > * {
-            margin-bottom: 2rem; } }
-        .section--5__cta > * strong {
-          display: block;
-          font-family: 'Headings'; }
-      .section--5__cta > *:not(:last-child) {
-        margin-right: 7.5rem; }
-        @media only screen and (max-width: 56.25rem) {
-          .section--5__cta > *:not(:last-child) {
-            margin-right: 0; } }
-      .section--5__cta__1 {
-        background-color: var(--color-bg-2); }
-      .section--5__cta__3 {
-        background-color: var(--color-bg-4); }
-  .section--6 {
-    background-color: var(--color-bg-6); }
-    .section--6 h2 {
-      width: 100%;
-      text-align: center; }
-
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
